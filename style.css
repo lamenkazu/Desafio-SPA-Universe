@@ -1,0 +1,129 @@
+/*Configurações Gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    font-family: 'Roboto', sans-serif;
+
+    --color-base-ocean: #02799D;
+    --color-base-mid-gray: #C4C4CC;
+    --color-base-light-gray: #E1E1E6;
+    --color-base-white: white;
+}
+
+body{
+    background: url("./assets/1.jpg") no-repeat center/cover, lightgray;
+    
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    font-size: 1.6rem;
+
+    transition: background-image .5s ease-in-out;
+
+}
+
+/* Estilização Nav */
+nav{
+    display: flex;
+    padding: 4rem 7.2rem;
+
+    gap: 4.3rem;
+    align-items: center;
+
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 5.2rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--color-base-mid-gray);
+}
+
+.active{
+    color: var(--color-base-white);
+    font-weight: 700;
+}
+
+
+/* Estilização Geral App */
+
+#app h1{
+    color: var(--color-base-light-gray);
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 125%; /* 60px */
+}
+
+/* Estilização Page Home*/
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.home h1{
+    padding-top: 10rem;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+button{
+    border-radius: .5rem;
+    border: 2px solid #FFF;
+    background: 0;
+
+    padding: 1.2rem 3.2rem;
+    gap: 8px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    margin: 0 auto;
+}
+
+button a,
+button{
+    transition: .21s;
+}
+
+button a{
+    text-decoration: none;
+    color: var(--color-base-white);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem; 
+}
+
+button:hover{
+    background-color: var(--color-base-white);
+}
+
+button:hover a{
+    color: var(--color-base-ocean);
+}
+
+/* Estilização Page Universe*/
+.article{
+    padding: 6.3rem 10.2rem;
+}
+
+.article h1{
+    padding-bottom: 1.6rem;
+}
+
+.article p{
+    width: 64.8rem;
+    color: var(--color-base-light-gray);
+    font-size: 1.8rem;
+    line-height: 160%;
+}
